@@ -1,4 +1,4 @@
-Setting up a Django project
+## Setting up a Django project
 
 1. Create a virtual environment using the following command:
    python3 -m venv django_rest_api
@@ -22,4 +22,20 @@ Setting up a Django project
     |    manage.py, the command center file for your project    |
     |-----------------------------------------------------------|
 
-// INSTALL WORKED 
+** INSTALL WORKED **
+
+Apps are a lower level units that represent a specific module. 
+For example, in our project, we will create an app called tasks. 
+To do so, change the directory to the backend
+
+6. Create the app [post - for blog posts]
+    python manage.py startapp posts
+
+7. Add APP tasks to the INSTALLED_APPS list in the backend/settings.py file:
+    INSTALLED_APPS = [
++        'tasks'
+    ]
+
+** We can now start setting up a Django REST API. **
+
+## Creating a task model
